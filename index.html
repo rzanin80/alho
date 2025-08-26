@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZANI FOODS - Condimentos e Especiarias</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png"> </head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">ZANI FOODS</h1>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#cadastro">Cadastro</a></li>
+                    <li><a href="#tendencias">Tendências</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h2>O sabor que inspira suas receitas</h2>
+                <p>Descubra a qualidade Alho Zani e Feijão da Vovó. Direto da nossa casa para a sua cozinha!</p>
+                <a href="#produtos" class="btn-cta">Explore nossos produtos</a>
+            </div>
+        </section>
+        
+        <section id="produtos" class="produtos">
+            <div class="container">
+                <h2>Nossos Produtos</h2>
+                <div class="produto-grid">
+                    <div class="produto-card">
+                        <img src="imagens/alho-cartela-150g.jpg" alt="Alho em Cartela 150g">
+                        <h3>Alho em Cartela 150g</h3>
+                        <p class="marca">Marca: Alho Zani</p>
+                        <button class="btn-preco">Ver Preço (Login necessário)</button>
+                    </div>
+                    
+                    <div class="produto-card">
+                        <img src="imagens/feijao-250g.jpg" alt="Feijão Congelado 250g">
+                        <h3>Feijão em Pote Congelado 250g</h3>
+                        <p class="marca">Marca: Feijão da Vovó</p>
+                        <button class="btn-preco">Ver Preço (Login necessário)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cadastro" class="cadastro">
+            <div class="container">
+                <h2>Cadastre-se para Acessar Preços e Comprar</h2>
+                <form id="cadastro-form">
+                    <div class="form-options">
+                        <button type="button" class="btn-toggle active" data-form="pf">Pessoa Física</button>
+                        <button type="button" class="btn-toggle" data-form="pj">Pessoa Jurídica</button>
+                    </div>
+                    
+                    <div id="form-pf" class="form-section active">
+                        <input type="text" placeholder="Nome Completo" required>
+                        <input type="email" placeholder="E-mail" required>
+                        <input type="tel" placeholder="Telefone (DDD) 99999-9999" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
+                        <input type="password" placeholder="Senha" required>
+                    </div>
+
+                    <div id="form-pj" class="form-section">
+                        <input type="text" placeholder="Nome da Empresa" required>
+                        <input type="text" placeholder="CNPJ" required>
+                        <input type="text" placeholder="Nome do Responsável" required>
+                        <input type="email" placeholder="E-mail" required>
+                        <input type="password" placeholder="Senha" required>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="tendencias" class="tendencias">
+            <div class="container">
+                <h2>Tendências Culinárias do Momento</h2>
+                <div class="tendencia-card">
+                    <h3>"Clean Label"</h3>
+                    <p>Os consumidores buscam por produtos com ingredientes mais naturais e rótulos transparentes, valorizando a procedência e a ausência de aditivos artificiais. Nossos condimentos Alho Zani se encaixam perfeitamente nessa tendência, oferecendo sabor puro e autêntico.</p>
+                </div>
+                <div class="tendencia-card">
+                    <h3>Cozinha de Conforto com Toque Gourmet</h3>
+                    <p>A nostalgia da comida de casa, como o tradicional feijão, ganha um toque especial com temperos de alta qualidade. Produtos como o Feijão da Vovó e os temperos Alho Zani permitem resgatar a culinária afetiva de forma prática e deliciosa.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <p><strong>ZANI FOODS</strong> - Condimentos e Especiarias</p>
+                <p>Rua Mandarim, 865 - Jardim Panorama</p>
+                <p>Arapongas, PR - CEP: 86708-040</p>
+                <p>Telefone: (43) 99980-8756</p>
+                <p>E-mail: alho_arapongas@hotmail.com</p>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2025 ZANI FOODS. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
